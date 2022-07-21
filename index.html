@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Artesanal Glass</title>
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Rubik+Moonrocks&display=swap"
+      rel="stylesheet"
+    />
+    <script src="slider.js"></script>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <div class="container container--flex">
+        <div class="main-header__container">
+          <h1 class="main-header__title">Artesanal Glass</h1>
+          <span class="icon-menu" id="btn-menu"
+            ><i class="fa-solid fa-bars"></i
+          ></span>
+          <nav class="main-nav" id="main-nav">
+            <ul class="menu">
+              <li class="menu__item">
+                <a href="#prueba" class="menu__link">INICIO</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">ACERCA DE</a>
+              </li>
+              <li class="menu__item">
+                <a href="#tienda" class="menu__link">TIENDA</a>
+              </li>
+              <li class="menu__item">
+                <a href="#contacto" class="menu__link">CONTACTO</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="main-header__container">
+          <span class="main-header__txt">¿Necesitas ayuda?</span>
+          <p class="main-header__txt">
+            <i class="fa-solid fa-phone"></i> Contáctanos al 611111111
+          </p>
+        </div>
+        <div class="main-header__container">
+          <button type="button" class="btn btn-outline-secondary">
+            Carrito<i class="fa-solid fa-cart-shopping"></i>
+          </button>
+          <div class="input-group mb-3 mt-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Productos"
+              aria-label="Productos"
+              aria-describedby="button-addon2"
+            />
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+            >
+              Buscar
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container-slider">
+      <div class="slider" id="slider">
+        <div class="slider__section">
+          <img src="img/2.jpg" alt="" class="slider__img" />
+          <div class="slider__content">
+            <h2 class="slider__title">Portavelas</h2>
+            <p class="slider__txt"></p>
+            <a href="" class="slider__link">COMPRAR</a>
+          </div>
+        </div>
+        <div class="slider__section">
+          <img src="img/3.jpg" alt="" class="slider__img" />
+          <div class="slider__content">
+            <h2 class="slider__title">Espejos</h2>
+            <p class="slider__txt"></p>
+            <a href="" class="slider__link">COMPRAR</a>
+          </div>
+        </div>
+        <div class="slider__section">
+          <img src="img/4.jpg" alt="" class="slider__img" />
+          <div class="slider__content">
+            <h2 class="slider__title">Adornos</h2>
+            <p class="slider__txt"></p>
+            <a href="" class="slider__link">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+      <a class="next" id="btn-right" onclick="plusSlides(1)">&#62;</a>
+      <a class="prev" id="btn-left" onclick="plusSlides(-1)">&#60;</a>
+    </div>
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <main class="main">
+      <div class="container">
+        <h2 class="main title">Artículos</h2>
+        <section class="container-products">
+          <div class="product">
+            <img src="img/espejo.jpg" alt="" class="product__img" />
+            <div class="product__description">
+              <h3 class="product__title">
+                <a href="espejo.html" class="product_link"> Espejo</a>
+              </h3>
+              <span class="product__price">100€</span>
+            </div>
+            <i class="product__icon fa-solid fa-cart-arrow-down"></i>
+          </div>
+          <div class="product">
+            <img src="img/portaincienso.jpg" alt="" class="product__img" />
+            <div class="product__description">
+              <h3 class="product__title">
+                <a class="product_link" href="">Portaincienso</a>
+              </h3>
+              <span class="product__price">20€</span>
+            </div>
+            <i class="product__icon fa-solid fa-cart-arrow-down"></i>
+          </div>
+          <div class="product">
+            <img src="img/lampara.jpg" alt="" class="product__img" />
+            <div class="product__description">
+              <h3 class="product__title">
+                <a href="" class="product_link">Lámpara</a>
+              </h3>
+              <span class="product__price">15€</span>
+              Lámpara hecha con cristal menorquín
+            </div>
+            <i class="product__icon fa-solid fa-cart-arrow-down"></i>
+          </div>
+          <div class="product">
+            <img src="img/separador.jpg" alt="" class="product__img" />
+            <div class="product__description">
+              <h3 class="product__title">
+                <a href="" class="product_link">Separador</a>
+              </h3>
+              <span class="product__price">70€</span>
+            </div>
+            <i class="product__icon fa-solid fa-cart-arrow-down"></i>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="footer__section">
+        <h2 class="footer_title">Acerca de nosotros</h2>
+        <p class="footer__txt">
+          Curabitur non nulla sit amet nislinit tempus convallis quis ac lectus.
+          lac inia eget consectetur sed, convallis at tellus. Nulla porttitor
+          accumsana tincidunt
+        </p>
+      </div>
+      <div class="footer__section">
+        <h2 class="footer__title">Localización:</h2>
+        <p class="footer__txt">07730 número 38, Alaior, Illes Balears</p>
+        <h2 class="footer__title">Contacto :<a name="contacto"></a></h2>
+        <p class="footer_txt">Teléfono: +34 611 111 111</p>
+        <p class="footer_txt">email: Artesanalglass@gmail.com</p>
+      </div>
+      <div class="footer_section">
+        <h2 class="footer_title">Enlaces rápidos</h2>
+        <a href="#prueba" class="footer__link">Inicio</a>
+        <a href="" class="footer__link">Acerca de</a>
+        <a href="#tienda" class="footer__link">Tienda</a>
+        <a href="#contacto" class="footer__link">Contacta con nosotros</a>
+      </div>
+      <p class="copy">
+        ©2022 Artesanal Glass. Todos los derechos reservados | Diseñado por Gus
+        Frïng
+      </p>
+    </footer>
+  </body>
+</html>
